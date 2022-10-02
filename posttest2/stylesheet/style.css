@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
 
-*{
-    font-family: 'Alkalami', serif;
+* {
+  font-family: "Alkalami", serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,40 +11,50 @@ body {
   color: rgb(41, 35, 23);
 }
 
-nav {
-  padding: 10px;
-  display: flex;
-  background-color: rgb(54, 54, 54);
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  font-size: 30px;
-}
 
-nav a {
-  text-decoration: none;
-}
-
-.nav-link {
-  color: rgb(41,35,23);
-  display: flex;
-}
-
-.nav-item {
-  list-style-type: none;
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 75px;
+  padding: 30px 0;
+  background-color: rgb(41, 35, 23);
+}
+
+
+nav {
+  background-color: rgb(41, 35, 23);
+  position: sticky;
+  top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nav-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+.nav-item {
+  display: flex;
+  text-align: center;
+  padding: 20px 90px;
 }
 
 .nav-item a {
-  transition: all 0.5s ease-in-out;
   color: rgb(247, 225, 180);
+  text-decoration: none;
 }
 
 .nav-item a:hover {
-  color: white;
-  transform: scale(1.5);
+  transform: scale(1.2);
+}
+
+.main-contents{
+  height: 2000px;
 }
